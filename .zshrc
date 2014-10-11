@@ -46,6 +46,9 @@ stty -ixon
 
 eval "$(fasd --init auto)"
 
+# Add personal scripts to path
+export PATH=$PATH:~/bin
+
 # Check if there is a display and tty is number 1 and there is a TMUX variable
 # if [ -z "$DISPLAY" ] && [ $XDG_VTNR -eq 1 ] && [ -z "$TMUX" ]; then
 #     exec startx

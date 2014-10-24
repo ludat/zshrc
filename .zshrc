@@ -24,8 +24,8 @@ antigen-apply
 
 alias la="ls -a"
 
-function ranger-cd {
-    tempfile='/tmp/chosendir'
+function rangercd {
+    tempfile=$(mktemp)
     /usr/bin/ranger --choosedir="$tempfile" "${@:-$(pwd)}"
     test -f "$tempfile" &&
     if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then

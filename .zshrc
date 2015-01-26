@@ -7,9 +7,6 @@ antigen-use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen-bundle git
-antigen-bundle heroku
-antigen-bundle pip
-antigen-bundle lein
 antigen-bundle command-not-found
 antigen-bundle history-substring-search
 
@@ -44,7 +41,7 @@ export wlan='wlp3s0'
 
 stty -ixon
 
-eval "$(fasd --init auto)"
+# eval "$(fasd --init auto)"
 
 # Add personal scripts to path
 export PATH=$PATH:~/bin

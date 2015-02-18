@@ -3515,6 +3515,8 @@ fi
 
 zrclocal
 
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 ## genrefcard.pl settings
 
 ### doc strings for external functions from files

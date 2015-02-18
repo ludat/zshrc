@@ -3515,8 +3515,8 @@ fi
 
 zrclocal
 
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source .zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source .zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo

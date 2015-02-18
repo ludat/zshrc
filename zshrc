@@ -3515,6 +3515,7 @@ fi
 
 zrclocal
 
+source ~/.zsh/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ## genrefcard.pl settings

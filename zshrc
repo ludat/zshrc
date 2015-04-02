@@ -614,6 +614,7 @@ fi
 
 # completion system
 COMPDUMPFILE=${COMPDUMPFILE:-${ZDOTDIR:-${HOME}}/.zcompdump}
+fpath=(~/.zsh/zsh-completions/src $fpath)
 if zrcautoload compinit ; then
     compinit -d ${COMPDUMPFILE} || print 'Notice: no compinit available :('
 else

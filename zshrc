@@ -2438,22 +2438,17 @@ fi
 
 # do we have GNU ls with color-support?
 if [[ "$TERM" != dumb ]]; then
-    #a1# List files with colors (\kbd{ls -F \ldots})
-    alias ls='command ls -F '${ls_options:+"${ls_options[*]}"}
-    #a1# List all files, with colors (\kbd{ls -la \ldots})
-    alias la='command ls -la '${ls_options:+"${ls_options[*]}"}
-    #a1# List files with long colored list, without dotfiles (\kbd{ls -l \ldots})
-    alias ll='command ls -l '${ls_options:+"${ls_options[*]}"}
-    #a1# List files with long colored list, human readable sizes (\kbd{ls -hAl \ldots})
+    alias ls='command ls -F   '${ls_options:+"${ls_options[*]}"}
+    alias la='command ls -hA  '${ls_options:+"${ls_options[*]}"}
+    alias ll='command ls -hl  '${ls_options:+"${ls_options[*]}"}
     alias lh='command ls -hAl '${ls_options:+"${ls_options[*]}"}
-    #a1# List files with long colored list, append qualifier to filenames (\kbd{ls -lF \ldots})\\&\quad(\kbd{/} for directories, \kbd{@} for symlinks ...)
-    alias l='command ls -lF '${ls_options:+"${ls_options[*]}"}
+    alias l='command ls -lhAF '${ls_options:+"${ls_options[*]}"}
 else
     alias ls='command ls -F'
-    alias la='command ls -la'
-    alias ll='command ls -l'
+    alias la='command ls -hA'
+    alias ll='command ls -hl'
     alias lh='command ls -hAl'
-    alias l='command ls -lF'
+    alias l='command ls -lhAF'
 fi
 
 alias mdstat='cat /proc/mdstat'

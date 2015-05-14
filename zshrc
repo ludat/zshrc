@@ -3511,6 +3511,13 @@ fi
 
 zrclocal
 
+function rancd {
+    tempfile="$(mktemp /tmp/chosendir.XXXXXXXX)"
+    ranger --choosedir="$tempfile"
+    cd -- "$(cat "$tempfile")"
+    rm -- "$tempfile"
+}
+
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 

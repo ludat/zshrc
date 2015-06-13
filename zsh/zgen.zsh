@@ -3,7 +3,7 @@ local ZGEN_SOURCE="$(cd "$(dirname "${0}")" && pwd -P)"
 
 
 if [[ -z "${ZGEN_DIR}" ]]; then
-    ZGEN_DIR="${HOME}/.zgen"
+    ZGEN_DIR="${HOME}/.zsh/zgen"
 fi
 
 if [[ -z "${ZGEN_INIT}" ]]; then

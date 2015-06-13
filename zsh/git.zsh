@@ -1,3 +1,11 @@
+# My aliases
+alias gst='git status'
+alias gd='git diff'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gc='git commit -v'
+alias ga='git add'
+
 # get the name of the branch we are on
 function git_prompt_info() {
   if [[ "$(command git config --get oh-my-zsh.hide-status 2>/dev/null)" != "1" ]]; then

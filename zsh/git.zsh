@@ -1,4 +1,5 @@
 # My aliases
+alias g='git'
 alias gst='git status'
 alias gd='git diff'
 alias gco='git checkout'

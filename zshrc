@@ -1,5 +1,6 @@
 export EDITOR="nvim"
 # load zgen
+export ZGEN_DIR="$HOME/.zsh/zgen/"
 source "$HOME/.zsh/zgen.zsh"
 
 source "$HOME/.zsh/bzr.zsh"
@@ -26,23 +27,22 @@ compinit -i -d "${ZSH_COMPDUMP}"
 autoload -U promptinit
 promptinit
 
-# plugins
-# zgen oh-my-zsh plugins/git
-zgen load robbyrussell/oh-my-zsh plugins/sudo
-zgen load robbyrussell/oh-my-zsh plugins/command-not-found
-zgen load zsh-users/zsh-syntax-highlighting
-zgen load zsh-users/zsh-history-substring-search
-
-# completions
-zgen load zsh-users/zsh-completions src
-
-# theme
-# zgen load robbyrussell/oh-my-zsh themes/arrow
-zgen load sorin-ionescu/prezto modules/prompt/functions
-
 # check if there's no init script
 if ! zgen saved; then
     echo "Creating a zgen save"
+    # plugins
+    # zgen oh-my-zsh plugins/git
+    zgen load robbyrussell/oh-my-zsh plugins/sudo
+    zgen load robbyrussell/oh-my-zsh plugins/command-not-found
+    zgen load zsh-users/zsh-syntax-highlighting
+    zgen load zsh-users/zsh-history-substring-search
+
+    # completions
+    zgen load zsh-users/zsh-completions src
+
+    # theme
+    # zgen load robbyrussell/oh-my-zsh themes/arrow
+    zgen load sorin-ionescu/prezto modules/prompt/functions
 
     # save all to init script
     zgen save

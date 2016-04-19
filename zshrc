@@ -1,4 +1,3 @@
-export EDITOR="nvim"
 # load zgen
 export ZGEN_DIR="$HOME/.zsh/zgen/"
 source "$HOME/.zsh/zgen.zsh"
